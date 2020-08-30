@@ -1,0 +1,107 @@
+form {
+    margin-left: 15%;
+    margin-right:15%;
+    width: 75%;
+    line-height: 0.5cm;
+    
+}
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 0px 15px 0px;
+  width: 20%;
+  margin-left: 10%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.wrapper
+{
+  width: 200px;
+  height:200px;
+  margin: 15% auto;
+  
+}
+
+.box-area{
+  animation: animate 10s ease-in-out infinite ;
+  transform-style: preserve-3d;
+  transform-origin: 200px 200px 0;
+  position:absolute; left:40%;top:30%;
+}
+
+.box-area div{
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   line-height: 400px;
+}
+
+.box-area .box-1{
+  background-image: url("src/assets/IMG_20200729_110711.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(200px);
+}
+.box-area .box-2{
+  background-image: url("src/assets/IMG_20200729_110720.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) translateZ(200px);
+}
+
+.box-area .box-3{
+  background-image: url("src/assets/IMG_20200729_110728.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(200px);
+}
+.box-area .box-4{
+  background-image: url("src/assets/IMG_20200729_110807.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
+}
+.box-area .box-5{
+  background-image: url("src/assets/IMG_20200729_111131.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+}
+.box-area .box-6{
+  background-image: url("src/assets/IMG_20200729_111203.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateX(-90deg) translateZ(200px);
+}
+
+@keyframes animate{
+  from,to{
+         transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+  } 
+  16%
+  {
+    transform: rotateY(-90deg);
+  }
+  33%
+  {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50%
+  {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%
+  {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83%
+  {
+    transform: rotateX(90deg) ;
+  }
+}
